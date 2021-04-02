@@ -1026,7 +1026,6 @@ Filechooser_Response(
 Open_Nec2_Editor( int action )
 {
   nec2_edit_window = create_nec2_editor( &nec2_editor_builder );
-  gtk_widget_hide( nec2_edit_window );
   Set_Window_Geometry( nec2_edit_window,
 	  rc_config.nec2_edit_x, rc_config.nec2_edit_y,
 	  rc_config.nec2_edit_width, rc_config.nec2_edit_height );
