@@ -37,13 +37,12 @@ AM_GNU_GETTEXT_VERSION([0.19.8])
 GETTEXT_PACKAGE=xnec2c
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["$GETTEXT_PACKAGE"], [Gettext package.])
-AM_GNU_GETTEXT
+AM_GNU_GETTEXT([external])
 PROGRAMNAME_LOCALEDIR=[${datadir}/locale]
 AC_SUBST(PROGRAMNAME_LOCALEDIR)
 
 # Add the languages which your application supports here.
 ALL_LINGUAS=""
-AM_GNU_GETTEXT
 
 # Checks for header files.
 AC_CHECK_HEADERS([fcntl.h libintl.h locale.h stdlib.h string.h unistd.h])
